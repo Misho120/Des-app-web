@@ -8,7 +8,7 @@ Este proyecto consiste en un **Curriculum Vitae interactivo** desarrollado con t
 
 ## 🖼️ Vista previa
 
-![Preview](img/preview.png)
+![Preview](02-maquetacion-cv/img/preview.jpg)
 
 ---
 
