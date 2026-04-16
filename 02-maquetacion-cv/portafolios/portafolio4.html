@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portafolio 4</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<a href="../index.html">← Volver al CV</a>
+</div>
+
+<!-- HEADER -->
+<header class="project-hero">
+<h1>Portafolio 4</h1>
+<p>Logotipos</p>
+</header>
+
+<!-- BOTÓN CAMBIO DE VISTA -->
+<div class="view-toggle">
+    <button onclick="toggleView()">Cambiar vista</button>
+</div>
+
+<!-- CONTENIDO -->
+<section class="project-container">
+
+<!-- EVIDENCIA 1 -->
+<div class="project-card">
+<img src="../img/preview4.jpg" class="project-image">
+<div class="project-info">
+<h2>Logo</h2>
+<h3>Identidad visual</h3>
+<p>Diseño de logotipo.</p>
+</div>
+</div>
+
+<!-- EVIDENCIA 2 -->
+<div class="project-card">
+<img src="../img/proyecto4b.jpg" class="project-image">
+<div class="project-info">
+<h2>Logo</h2>
+<h3>Constructora</h3>
+<p>Guía de marca.</p>
+</div>
+</div>
+
+<!-- EVIDENCIA 3 -->
+<div class="project-card">
+<img src="../img/proyecto4c.jpg" class="project-image">
+<div class="project-info">
+<h2>Logo</h2>
+<h3>Lotos</h3>
+<p>Aplicación en productos.</p>
+</div>
+</div>
+
+<!-- NAVEGACIÓN -->
+<div class="project-card nav-box">
+<a href="portafolio3.html">← Anterior</a>
+<a href="portafolio5.html">Siguiente →</a>
+</div>
+
+</section>
+
+<!-- SCRIPT -->
+<script>
+function toggleView(){
+    document.querySelector('.project-container')
+    .classList.toggle('horizontal');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portafolio 1</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<a href="../index.html">← Volver al CV</a>
+</div>
+
+<!-- TÍTULO -->
+<header class="project-hero">
+<h1>Portafolio 1</h1>
+<p>Ilustración Digital</p>
+</header>
+
+<!-- BOTÓN CAMBIO DE VISTA -->
+<div class="view-toggle">
+    <button onclick="toggleView()">Cambiar vista</button>
+</div>
+
+<!-- CONTENIDO -->
+<section class="project-container">
+
+<!-- EVIDENCIA 1 -->
+<div class="project-card">
+<img src="../Img/preview1.jpg" class="project-image">
+<div class="project-info">
+<h2>Ilustración 1</h2>
+<h3>Personaje conceptual</h3>
+<p>taurus female.</p>
+</div>
+
+<div class="tags">
+<span>Skech</span>
+<span>Concept Art</span>
+<span>Ilustración</span>
+</div>
+</div>
+
+<!-- EVIDENCIA 2 -->
+<div class="project-card">
+<img src="../Img/proyecto1b.jpg" class="project-image">
+<div class="project-info">
+<h2>Ilustración 2</h2>
+<h3>Bocetaje digital</h3>
+<p>Heterocromia.</p>
+</div>
+</div>
+
+<!-- EVIDENCIA 3 -->
+<div class="project-card">
+<img src="../Img/proyecto1c.jpg" class="project-image">
+<div class="project-info">
+<h2>Ilustración 3</h2>
+<h3>Inspiración</h3>
+<p>Encanto.</p>
+</div>
+</div>
+
+<!-- NAVEGACIÓN -->
+<div class="project-card nav-box">
+<a href="portafolio5.html">← Anterior</a>
+<a href="portafolio2.html">Siguiente →</a>
+</div>
+
+</section>
+
+<!-- SCRIPT CAMBIO DE VISTA -->
+<script>
+function toggleView(){
+    document.querySelector('.project-container')
+    .classList.toggle('horizontal');
+}
+</script>
+
+</body>
+</html>

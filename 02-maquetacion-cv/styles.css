@@ -1,0 +1,656 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#d9d9d9;
+}
+
+/* ===================== */
+/* TOP */
+/* ===================== */
+.top{
+background:url("img/paper.jpg") center/cover;
+text-align:center;
+padding:90px 20px;
+border-bottom:2px solid rgba(0,0,0,0.1);
+}
+
+.top h1{
+font-family:'Playfair Display', serif;
+font-size:62px;
+letter-spacing:6px;
+font-weight:700;
+}
+
+.top p{
+margin-top:10px;
+color:#555;
+font-weight:400;
+}
+
+/* ===================== */
+/* HERO (FRANJA NEGRA GRANDE) */
+/* ===================== */
+.hero{
+background:#2b2b2b;
+color:white;
+padding:140px 20px;
+display:flex;
+justify-content:center;
+}
+
+.hero-container{
+display:flex;
+gap:70px;
+align-items:center;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* ===================== */
+/* STACK DE FOTOS (RESTORED) */
+/* ===================== */
+.photo-stack{
+position:relative;
+width:260px;
+height:340px;
+}
+
+/* FOTO BASE */
+.photo{
+background:white;
+padding:15px 15px 45px;
+width:260px;
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+position:absolute;
+top:0;
+left:0;
+transition:0.6s ease;
+}
+
+.photo img{
+width:100%;
+display:block;
+}
+
+/* PRINCIPAL */
+.main{
+transform:rotate(-6deg);
+z-index:10;
+}
+
+/* CINTA */
+.main .tape{
+width:90px;
+height:28px;
+background:rgba(216,195,165,0.9);
+position:absolute;
+top:-15px;
+left:50%;
+transform:translateX(-50%) rotate(-8deg);
+border-radius:3px;
+}
+
+/* EXTRAS OCULTAS */
+.extra{
+opacity:0;
+pointer-events:none;
+}
+
+/* ===================== */
+/* HOVER ANIMATION */
+/* ===================== */
+
+.photo-stack:hover .extra1{
+transform:translateX(-220px) translateY(-180px) scale(0.72);
+opacity:1;
+z-index:3;
+}
+
+.photo-stack:hover .extra2{
+transform:translateX(-380px) translateY(0px) scale(0.72);
+opacity:1;
+z-index:2;
+}
+
+.photo-stack:hover .extra3{
+transform:translateX(-220px) translateY(180px) scale(0.72);
+opacity:1;
+z-index:1;
+}
+
+.photo-stack:hover .main{
+transform:rotate(0deg) scale(1.03);
+}
+
+/* ===================== */
+/* INFO */
+/* ===================== */
+.info{
+max-width:420px;
+}
+
+.info h2{
+font-family:'Playfair Display', serif;
+font-size:54px;
+font-weight:700;
+}
+
+.info h3{
+color:#8bc34a;
+margin-bottom:15px;
+font-weight:600;
+}
+
+.info p{
+line-height:1.6;
+margin-bottom:10px;
+font-weight:300;
+}
+
+.contact{
+margin-top:15px;
+opacity:0.9;
+font-weight:400;
+}
+
+/* ===================== */
+/* BOTÓN PORTAFOLIO */
+/* ===================== */
+.btn-portafolio{
+margin-top:25px;
+}
+
+.btn-portafolio a{
+display:inline-block;
+padding:12px 28px;
+background:#8bc34a;
+color:white;
+text-decoration:none;
+border-radius:25px;
+font-weight:500;
+transition:0.3s ease;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-portafolio a:hover{
+transform:scale(1.05);
+background:#7cb342;
+}
+
+/* ===================== */
+/* ABOUT */
+/* ===================== */
+.about{
+background:url("img/paper.jpg") center/cover;
+padding:70px 20px;
+display:flex;
+justify-content:center;
+}
+
+.cards{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:14px;
+width:250px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:.3s;
+}
+
+.card h3{
+font-family:'Playfair Display', serif;
+font-weight:700;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* ===================== */
+/* PORTAFOLIO LIST */
+/* ===================== */
+.portfolio-list{
+max-width:900px;
+margin:40px auto;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.portfolio-item{
+display:flex;
+gap:20px;
+background:white;
+padding:15px;
+border-radius:15px;
+text-decoration:none;
+color:#333;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s ease;
+align-items:center;
+}
+
+.portfolio-item:hover{
+transform:scale(1.02);
+}
+
+.portfolio-item img{
+width:140px;
+height:100px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.portfolio-text h2{
+font-size:18px;
+font-family:'Playfair Display', serif;
+margin-bottom:5px;
+}
+
+.portfolio-text p{
+font-size:14px;
+opacity:0.7;
+}
+
+/* BOTÓN VOLVER */
+.back-home{
+text-align:center;
+margin:30px;
+}
+
+.back-home a{
+text-decoration:none;
+color:#fff;
+background:#8bc34a;
+padding:10px 20px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.back-home a:hover{
+background:#7cb342;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+@media(max-width:768px){
+.hero-container{
+flex-direction:column;
+text-align:center;
+}
+}
+/* ===================== */
+/* RESET FUERTE */
+/* ===================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#d9d9d9;
+}
+
+/* ===================== */
+/* NAVBAR */
+/* ===================== */
+
+.navbar{
+padding:15px 20px;
+background:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.navbar a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* ===================== */
+/* HERO PORTAFOLIO */
+/* ===================== */
+
+.project-hero{
+text-align:center;
+padding:60px 20px 20px;
+}
+
+.project-hero h1{
+font-family:'Playfair Display', serif;
+font-size:42px;
+}
+
+.project-hero p{
+color:#777;
+margin-top:5px;
+}
+
+/* ===================== */
+/* LAYOUT PRINCIPAL */
+/* ===================== */
+
+.project-container{
+max-width:1000px;
+margin:50px auto;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+/* ===================== */
+/* CARD PRINCIPAL */
+/* ===================== */
+
+.project-card{
+background:#ffffff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+padding:15px;
+transition:0.3s ease;
+display:block;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* ===================== */
+/* IMAGENES (MUY IMPORTANTE) */
+/* ===================== */
+
+.project-image{
+width:100%;
+display:block;
+border-radius:12px;
+object-fit:cover;
+}
+
+/* ===================== */
+/* TEXTO */
+/* ===================== */
+
+.project-info{
+padding:15px 5px;
+}
+
+.project-info h2{
+font-family:'Playfair Display', serif;
+font-size:22px;
+margin-bottom:5px;
+}
+
+.project-info h3{
+color:#8bc34a;
+font-size:16px;
+margin-bottom:10px;
+}
+
+.project-info p{
+color:#444;
+line-height:1.5;
+}
+
+/* ===================== */
+/* TAGS */
+/* ===================== */
+
+.tags{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:10px;
+}
+
+.tags span{
+background:#eee;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+}
+
+/* ===================== */
+/* NAVEGACIÓN ENTRE PORTAFOLIOS */
+/* ===================== */
+
+.nav-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#2b2b2b;
+padding:15px 20px;
+border-radius:12px;
+}
+
+.nav-box a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+/* ===================== */
+/* SEGURIDAD EXTRA (ANTI-ROTURA) */
+/* ===================== */
+
+img{
+max-width:100%;
+height:auto;
+}
+
+section{
+width:100%;
+}
+/* ===================== */
+/* PORTAFOLIOS - LAYOUT UNIFORME */
+/* ===================== */
+
+.project-hero{
+text-align:center;
+padding:60px 20px 25px;
+background:#f5f5f5;
+}
+
+.project-hero h1{
+font-family:'Playfair Display', serif;
+font-size:42px;
+margin-bottom:5px;
+}
+
+.project-hero p{
+color:#666;
+font-size:16px;
+}
+
+/* CONTENEDOR GENERAL */
+.project-container{
+max-width:1000px;
+margin:40px auto;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+/* TARJETAS */
+.project-card{
+background:#fff;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+transition:0.3s ease;
+padding:15px;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* IMAGEN */
+.project-image{
+width:100%;
+display:block;
+border-radius:12px;
+margin-bottom:12px;
+}
+
+/* TEXTO */
+.project-info{
+padding:10px 5px;
+}
+
+.project-info h2{
+font-family:'Playfair Display', serif;
+font-size:20px;
+margin-bottom:5px;
+}
+
+.project-info h3{
+color:#8bc34a;
+font-size:15px;
+margin-bottom:8px;
+}
+
+.project-info p{
+color:#444;
+line-height:1.5;
+}
+
+/* TAGS */
+.tags{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:10px;
+}
+
+.tags span{
+background:#eee;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+}
+
+/* NAVEGACIÓN */
+.nav-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#2b2b2b;
+padding:15px;
+border-radius:12px;
+}
+
+.nav-box a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.project-container{
+padding:10px;
+}
+
+.nav-box{
+flex-direction:column;
+gap:10px;
+}
+}
+.titulo-animado span{
+display:inline-block;
+opacity:0;
+animation: cinematicIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.titulo-animado span:nth-child(1){ animation-delay:0.05s; }
+.titulo-animado span:nth-child(2){ animation-delay:0.1s; }
+.titulo-animado span:nth-child(3){ animation-delay:0.15s; }
+.titulo-animado span:nth-child(4){ animation-delay:0.2s; }
+.titulo-animado span:nth-child(5){ animation-delay:0.25s; }
+.titulo-animado span:nth-child(6){ animation-delay:0.3s; }
+.titulo-animado span:nth-child(7){ animation-delay:0.35s; }
+.titulo-animado span:nth-child(8){ animation-delay:0.4s; }
+.titulo-animado span:nth-child(9){ animation-delay:0.45s; }
+.titulo-animado span:nth-child(10){ animation-delay:0.5s; }
+.titulo-animado span:nth-child(11){ animation-delay:0.55s; }
+.titulo-animado span:nth-child(12){ animation-delay:0.6s; }
+.titulo-animado span:nth-child(13){ animation-delay:0.65s; }
+.titulo-animado span:nth-child(14){ animation-delay:0.7s; }
+.titulo-animado span:nth-child(15){ animation-delay:0.75s; }
+
+@keyframes cinematicIn{
+0%{
+opacity:0;
+transform:translate3d(0, -60px, 0) scale(0.8) rotateX(90deg);
+filter:blur(10px);
+}
+60%{
+opacity:1;
+transform:translate3d(0, 10px, 0) scale(1.05) rotateX(-10deg);
+filter:blur(0);
+}
+100%{
+opacity:1;
+transform:translate3d(0, 0, 0) scale(1) rotateX(0deg);
+}
+}
+/* ===================== */
+/* BOTÓN VISTA */
+/* ===================== */
+
+.view-toggle{
+    text-align:center;
+    margin: 20px 0;
+}
+
+.view-toggle button{
+    background:#8bc34a;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    color:white;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.view-toggle button:hover{
+    background:#7cb342;
+    transform:scale(1.05);
+}
+
+/* ===================== */
+/* LAYOUT HORIZONTAL (ACTIVABLE) */
+/* ===================== */
+
+.project-container.horizontal{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container.horizontal .project-card{
+    width: 300px;
+}
