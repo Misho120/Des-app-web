@@ -6,12 +6,6 @@ Este proyecto consiste en un **Curriculum Vitae interactivo** desarrollado con t
 
 ---
 
-## Vista previa CV
-
-![Preview](02-maquetacion-cv/img/preview.jpg)
-
----
-
 ## ✨ Características
 
 - Diseño visual moderno y limpio  
