@@ -6,10 +6,9 @@ Este proyecto consiste en un **Curriculum Vitae interactivo** desarrollado con t
 
 ---
 
-## 🖼️ Vista previa
+## Vista previa CV
 
-![Preview](02-maquetacion-cv/img/preview.jpg)
-
+![Preview](https://raw.githubusercontent.com/Misho120/Des-app-web/main/02-maquetacion-cv/img/preview.jpg)
 ---
 
 ## ✨ Características
