@@ -8,7 +8,8 @@ Este proyecto consiste en un **Curriculum Vitae interactivo** desarrollado con t
 
 ## Vista previa CV
 
-![Preview](https://raw.githubusercontent.com/Misho120/Des-app-web/main/02-maquetacion-cv/img/preview.jpg)
+![Preview](02-maquetacion-cv/img/preview.jpg)
+
 ---
 
 ## ✨ Características
