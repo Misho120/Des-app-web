@@ -6,6 +6,12 @@ Este proyecto consiste en un **Curriculum Vitae interactivo** desarrollado con t
 
 ---
 
+## 🖼️ Vista previa
+
+![Preview](img/preview.png)
+
+---
+
 ## ✨ Características
 
 - Diseño visual moderno y limpio  
